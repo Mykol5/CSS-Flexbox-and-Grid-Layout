@@ -1,0 +1,89 @@
+body {
+  background: rgb(17, 19, 19);
+}
+
+#container {
+  margin: 5% auto;
+  width: 60%;
+  display: grid;
+  grid-template-areas:
+    "one one one two"
+    "three three four four"
+    /* 'three three fve fve' */;
+  grid-gap: 1rem;
+}
+
+.item {
+  padding: 6rem;
+}
+
+.nest {
+  display: grid;
+  gap: 1rem;
+}
+
+.one {
+  background-color: orangered;
+  grid-area: one;
+}
+
+.two {
+  background-color: rgb(204, 226, 77);
+  grid-area: two;
+}
+
+.three {
+  background-color: rgb(26, 121, 46);
+  grid-area: three;
+}
+
+.nest {
+  grid-area: four;
+}
+
+.four {
+  background-color: rgb(100, 205, 237);
+}
+
+.five {
+  background-color: rgb(100, 205, 237);
+}
+
+.switchbtn {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 104, 112, 0.048);
+  width: 14rem;
+  padding: 1rem 0;
+  border-radius: 30px;
+}
+
+.btnswitch_ind {
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  background: orangered;
+  border: 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px 0 0 10px;
+}
+
+.btnswitch_grd {
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  background: rgb(26, 121, 46);
+  border: 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.btnswitch_grd a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btnswitch_ind a {
+  text-decoration: none;
+  color: #fff;
+}
